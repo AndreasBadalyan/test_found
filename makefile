@@ -4,7 +4,7 @@ H:=$(patsubst src/%.hpp,inc/%.hpp,$(wildcard src/*.hpp))
 O:=$(patsubst src/%.cpp,obj/%.o,$(S))
 D:=$(patsubst src/%.cpp,obj/%.dep,$(S))
 
-all: $(EXE) $(H)
+all: $(EXE) $(H) 
 
 $(EXE): $(O)
 	gcc $^ -lstdc++ -o $@
@@ -29,3 +29,7 @@ clean:
 .PHONY: doxyclean
 doxyclean: 
 	rm -r doxygen/html doxygen/latex 
+
+.PHONY: run 
+run:
+	./main A.txt test 1

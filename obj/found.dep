@@ -1,0 +1,1 @@
+obj/found.dep obj/found.o: src/found.cpp
