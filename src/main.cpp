@@ -35,10 +35,11 @@ int main(int argc, char **argv)
     file.open(file_name);
 
     if (count == found(word)) {
-        out_file << word << ' ' << count;
-        std::clog << "test succesfully passed!\n";
+        out_file << word << ' ' << count << std::endl;
+        //std::clog << "test succesfully passed!\n";
     } else {
-        std::clog << "test faild.\n";
+        //std::clog << "test faild.\n";
+        out_file << "test faild" << std::endl;
     }
 
     return 0;

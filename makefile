@@ -30,6 +30,7 @@ clean:
 doxyclean: 
 	rm -r doxygen/html doxygen/latex 
 
-.PHONY: run 
-run:
+.PHONY: test 
+test: $(EXE)
 	./main A.txt test 1
+	@if cmp -s output.txt golden.txt ; then echo test succesfully pssed! ; else echo test faild ; fi
