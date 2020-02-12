@@ -10,6 +10,8 @@ int found(std::string);
 
 int main(int argc, char **argv)
 {
+    std::ofstream out_file("output.txt");
+
     if (2 == argc) {
 
         if (!std::strcmp(argv[1], "--help")) {
@@ -33,7 +35,8 @@ int main(int argc, char **argv)
     file.open(file_name);
 
     if (count == found(word)) {
-        std::clog << "test succesfully pssed!\n";
+        out_file << word << ' ' << count;
+        std::clog << "test succesfully passed!\n";
     } else {
         std::clog << "test faild.\n";
     }

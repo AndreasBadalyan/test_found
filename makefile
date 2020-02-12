@@ -24,7 +24,7 @@ inc/%.hpp: src/%.hpp
 
 .PHONY: clean
 clean: 
-	rm -r obj $(EXE) inc 
+	rm -r obj $(EXE) output.txt inc 
 
 .PHONY: doxyclean
 doxyclean: 

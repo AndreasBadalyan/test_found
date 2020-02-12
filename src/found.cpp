@@ -6,5 +6,5 @@ extern std::ifstream file;
 
 int found(std::string word)
 {
-    return 2;
+    return 1;
 }
