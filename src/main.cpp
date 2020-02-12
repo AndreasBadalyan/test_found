@@ -6,7 +6,7 @@
 
 std::ifstream file;
 
-int found(std::string);
+int find(std::string);
 
 int main(int argc, char **argv)
 {
@@ -34,7 +34,7 @@ int main(int argc, char **argv)
     char *word = argv[2];
     file.open(file_name);
 
-    if (count == found(word)) {
+    if (count == find(word)) {
         out_file << word << ' ' << count << std::endl;
         //std::clog << "test succesfully passed!\n";
     } else {

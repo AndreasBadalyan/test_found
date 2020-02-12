@@ -4,7 +4,7 @@
 
 extern std::ifstream file;
 
-int found(std::string word)
+int find(std::string word)
 {
     return 1;
 }
