@@ -2,8 +2,11 @@
 #include <fstream>
 #include <cstring>
 #include <cstdlib>
+#include <string>
 
 std::ifstream file;
+
+int found(std::string);
 
 int main(int argc, char **argv)
 {
